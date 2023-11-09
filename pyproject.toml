@@ -8,8 +8,9 @@ packages = [{include = "pyspark_training"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pyspark = "^3.5.0"
 jupyterlab = "^4.0.8"
+pyspark = "3.4.1"
+findspark = "2.0.1"
 
 
 [build-system]

@@ -505,6 +505,17 @@ files = [
 devel = ["colorama", "json-spec", "jsonschema", "pylint", "pytest", "pytest-benchmark", "pytest-cache", "validictory"]
 
 [[package]]
+name = "findspark"
+version = "2.0.1"
+description = "Find pyspark to make it importable."
+optional = false
+python-versions = "*"
+files = [
+    {file = "findspark-2.0.1-py2.py3-none-any.whl", hash = "sha256:e5d5415ff8ced6b173b801e12fc90c1eefca1fb6bf9c19c4fc1f235d4222e753"},
+    {file = "findspark-2.0.1.tar.gz", hash = "sha256:aa10a96cb616cab329181d72e8ef13d2dc453b4babd02b5482471a0882c1195e"},
+]
+
+[[package]]
 name = "fqdn"
 version = "1.5.1"
 description = "Validates fully-qualified domain names against RFC 1123, so that they are acceptable to modern bowsers"
@@ -1315,23 +1326,23 @@ plugins = ["importlib-metadata"]
 
 [[package]]
 name = "pyspark"
-version = "3.5.0"
+version = "3.4.1"
 description = "Apache Spark Python API"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.7"
 files = [
-    {file = "pyspark-3.5.0.tar.gz", hash = "sha256:d41a9b76bd2aca370a6100d075c029e22ba44c5940927877e9435a3a9c566558"},
+    {file = "pyspark-3.4.1.tar.gz", hash = "sha256:72cd66ab8cf61a75854e5a753f75bea35ee075c3a96f9de4e2a66d02ec7fc652"},
 ]
 
 [package.dependencies]
 py4j = "0.10.9.7"
 
 [package.extras]
-connect = ["googleapis-common-protos (>=1.56.4)", "grpcio (>=1.56.0)", "grpcio-status (>=1.56.0)", "numpy (>=1.15)", "pandas (>=1.0.5)", "pyarrow (>=4.0.0)"]
+connect = ["googleapis-common-protos (>=1.56.4)", "grpcio (>=1.48.1)", "grpcio-status (>=1.48.1)", "numpy (>=1.15)", "pandas (>=1.0.5)", "pyarrow (>=1.0.0)"]
 ml = ["numpy (>=1.15)"]
 mllib = ["numpy (>=1.15)"]
-pandas-on-spark = ["numpy (>=1.15)", "pandas (>=1.0.5)", "pyarrow (>=4.0.0)"]
-sql = ["numpy (>=1.15)", "pandas (>=1.0.5)", "pyarrow (>=4.0.0)"]
+pandas-on-spark = ["numpy (>=1.15)", "pandas (>=1.0.5)", "pyarrow (>=1.0.0)"]
+sql = ["numpy (>=1.15)", "pandas (>=1.0.5)", "pyarrow (>=1.0.0)"]
 
 [[package]]
 name = "python-dateutil"
@@ -2006,4 +2017,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "7f8483d8d88709dac6f774a8477d16c53ce6380eacc7a76d0e27015e37ec0113"
+content-hash = "114c0d110b27c9d99d83bf734d1ecb6af667996be0cdea8d4084176070b14b8a"
